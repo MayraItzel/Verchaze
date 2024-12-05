@@ -1,0 +1,174 @@
+/* Estilos generales para la página */
+body {
+    display: flex; /* Configura el cuerpo para un diseño de flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    min-height: 100vh; /* Asegura que el cuerpo tenga una altura mínima de la pantalla */
+    margin: 0; /* Elimina el margen predeterminado */
+    font-family: 'Montserrat', sans-serif; /* Fuente de texto principal */
+    background-color: #F8F0E3; /* Color de fondo en tono hueso */
+    color: #6E4F3A; /* Color de texto en café suave */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #A67544; /* Fondo en café suave */
+    padding: 20px 0; /* Espaciado interno arriba y abajo */
+    border-bottom: 1px solid #DDD; /* Línea inferior para separar */
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex; /* Diseño flexible */
+    justify-content: space-between; /* Distribución de elementos (espaciados) */
+    align-items: center; /* Alineación central en el eje vertical */
+    max-width: 1200px; /* Ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 0 20px; /* Espaciado horizontal */
+    background-color: #A67544; /* Fondo café suave */
+    color: #FFF; /* Texto en blanco */
+}
+
+.navbar h1 {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 2.5em; /* Tamaño de fuente para el título */
+}
+
+/* Estilos para la sección hero */
+.hero {
+    display: flex; /* Flexbox para alinear el contenido */
+    align-items: center; /* Alineación vertical central */
+    padding: 40px 20px; /* Espaciado interno */
+    background-color: #F8F0E3; /* Fondo hueso */
+    color: #6E4F3A; /* Texto en café suave */
+    text-align: center; /* Texto centrado */
+}
+
+/* Imagen en la sección hero */
+.hero img {
+    max-width: 100%; /* Escala la imagen al ancho completo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Texto en la sección hero */
+.hero-text {
+    max-width: 600px; /* Ancho máximo del texto */
+    margin-left: 20px; /* Espaciado a la izquierda */
+}
+
+/* Encabezado en la sección hero */
+.hero-text h1 {
+    font-size: 2.5em; /* Tamaño de fuente */
+    color: #A67544; /* Color café suave */
+}
+
+/* Estilos para el botón en la sección hero */
+.hero-text .btn {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1.1em; /* Tamaño de fuente */
+    color: #FFF; /* Texto en blanco */
+    background-color: #A67544; /* Fondo café suave */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto de transición */
+}
+
+/* Efecto hover para el botón */
+.hero-text .btn:hover {
+    background-color: #8C5C3E; /* Café más oscuro */
+    transform: translateY(-2px); /* Movimiento hacia arriba */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: flex; /* Flexbox para centrar el modal */
+    position: fixed; /* Posición fija para cubrir toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 1000; /* Asegura que el modal esté por encima */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #FFF; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Texto centrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    position: relative; /* Para posicionar el botón de cierre */
+}
+
+/* Botón de cierre del modal */
+.close-btn {
+    position: absolute; /* Posición absoluta dentro del modal */
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: #6E4F3A; /* Color de cierre en café suave */
+    cursor: pointer; /* Cambia el cursor */
+}
+
+/* Estilos del formulario en el modal */
+.modal label {
+    display: block; /* Muestra el label en bloque */
+    margin-bottom: 5px; /* Espaciado inferior */
+    text-align: left; /* Alineación a la izquierda */
+    font-weight: bold; /* Negrita */
+}
+
+.modal input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border: 1px solid #DDD; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Botones dentro del modal */
+.modal button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #A67544; /* Fondo café suave */
+    color: #FFF; /* Texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto de transición */
+}
+
+.modal button:hover {
+    background-color: #8C5C3E; /* Café más oscuro */
+    transform: translateY(-2px); /* Movimiento hacia arriba */
+}
+
+/* Estilos para los enlaces en el modal */
+.registration-options p {
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.registration-options a {
+    color: #A67544; /* Color café suave */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.registration-options a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #A67544; /* Fondo café suave */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Texto centrado */
+    font-size: 0.9em; /* Tamaño de fuente */
+    color: #FFF; /* Texto en blanco */
+    border-top: 1px solid #DDD; /* Línea superior */
+}
