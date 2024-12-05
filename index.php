@@ -414,9 +414,6 @@ $productos_destacados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </footer>
 
 <script>
-
-   
-
     const registerModal = document.getElementById('register-modal');
     const loginModal = document.getElementById('login-modal');
     const registerBtn = document.getElementById('register-btn');
